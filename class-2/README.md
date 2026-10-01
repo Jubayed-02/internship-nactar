@@ -1,4 +1,4 @@
-# Topics were:
+# Introduction of:
 
 - HTML,
 - HTML code editor software,
