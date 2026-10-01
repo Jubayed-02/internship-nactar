@@ -19,3 +19,5 @@
 - Visual Studio Code (VS Code)
 - Notepad++
 - Sublime Text
+
+## I used notepad++ as my html code editor
