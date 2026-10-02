@@ -1,7 +1,7 @@
 # Use of:
 
 - Text formatting tags,
-- comments syntax,
+- Comments syntax,
 - HTML Attributes,
 - HTML Image tag,
 - Anchor tag,
