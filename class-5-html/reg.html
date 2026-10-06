@@ -6,16 +6,87 @@
     <title>Registration page</title>
   </head>
   <body>
-    <h2>Registration of a user</h2>
+    <h2>This is a Registration page</h2>
     <fieldset>
       <legend>Application form</legend>
       <form>
-        <table>
+        <table cellpadding="14">
           <tr>
             <td>Name</td>
             <td>:</td>
             <td>
-              <input type="text" name="name" placeholder="enter your name" />
+              <input
+                type="text"
+                name="name"
+                placeholder="enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="enter your email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td>
+              <input
+                type="password"
+                name="pwd"
+                placeholder="enter your password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" /> <small>Male</small>
+              <input type="radio" name="gender" /> <small>Female</small>
+              <input type="radio" name="gender" /> <small>Others</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Department</td>
+            <td>:</td>
+            <td>
+              <select>
+                <option>Select</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>CE</option>
+                <option>ME</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input type="checkbox" required /> I have read the terms and
+              policy
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p>Already have an account? <a href="login.html">Login</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td colspan="3" align="right">
+              <button type="submit">
+                <a href="profile.html">Submit</a>
+              </button>
             </td>
           </tr>
         </table>
