@@ -33,3 +33,31 @@
 |     none     |        Completely removed from page (no space taken)         |
 |     flex     |           Turns the element into a flex container            |
 |     grid     |           Turns the element into a grid container            |
+
+- ##CSS Overflow
+
+Controls what happens when content doesn't fit inside its box.
+
+### Values
+
+|       Value       |            Behavior             |
+| :---------------: | :-----------------------------: |
+| visible (default) |       Content spills out        |
+|      hidden       |       Clips extra content       |
+|      scroll       |     Always shows scrollbars     |
+|       auto        | Shows scrollbars only if needed |
+
+- ## CSS Position
+  position decides how an element is placed in the document.
+
+### The 5 Values
+
+|      Value       |                               Behavior                                |
+| :--------------: | :-------------------------------------------------------------------: |
+| static (default) |             Normal flow. top/left/right/bottom do nothing             |
+|     relative     |         Stays in place, but can be nudged with top/left/etc.          |
+|     absolute     | Removed from flow; positioned relative to nearest positioned ancestor |
+|      fixed       |     Positioned relative to the viewport; stays put when scrolling     |
+|      sticky      |       Acts relative, then sticks when scrolled past a threshold       |
+
+> Offsets top, right, bottom, left work with positioned elements (not static).
