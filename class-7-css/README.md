@@ -34,7 +34,7 @@
 |     flex     |           Turns the element into a flex container            |
 |     grid     |           Turns the element into a grid container            |
 
-- ##CSS Overflow
+- ## CSS Overflow
 
 Controls what happens when content doesn't fit inside its box.
 
