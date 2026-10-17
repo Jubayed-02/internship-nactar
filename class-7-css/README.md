@@ -61,3 +61,35 @@ Controls what happens when content doesn't fit inside its box.
 |      sticky      |       Acts relative, then sticks when scrolled past a threshold       |
 
 > Offsets top, right, bottom, left work with positioned elements (not static).
+
+## Common Filter Functions
+
+|    Filter     |                          Example Effect                          |
+| :-----------: | :--------------------------------------------------------------: |
+|    blur()     |                          blur(5px) Blur                          |
+| brightness()  |                 brightness(150%) Brighter/darker                 |
+|  contrast()   |                  contrast(200%) Boost contrast                   |
+|  grayscale()  |                  grayscale(100%) Black & white                   |
+|    sepia()    |                    sepia(80%) Old-photo look                     |
+|  saturate()   |                 saturate(200%) More vivid colors                 |
+| hue-rotate()  |                  hue-rotate(90deg) Shift colors                  |
+|   invert()    |                    invert(100%) Invert colors                    |
+|   opacity()   |                    opacity(50%) Transparency                     |
+| drop-shadow() | drop-shadow(2px 2px 4px black) Shadow that respects transparency |
+
+## Common Pseudo-classes
+
+|     Pseudo-class     |      When it applies       |
+| :------------------: | :------------------------: |
+|        :hover        |         Mouse over         |
+|        :focus        |  Element is focused (Tab)  |
+|       :active        |       Being clicked        |
+|       :visited       |        Link visited        |
+|     :first-child     |   First child of parent    |
+|     :last-child      |         Last child         |
+|    :nth-child(n)     |     Specific position      |
+| :nth-child(odd/even) |       Odd/even rows        |
+|    :not(selector)    | Excludes matching elements |
+|       :checked       |   Checked checkbox/radio   |
+| :disabled / :enabled |         Form state         |
+|      :required       |    Required form field     |
