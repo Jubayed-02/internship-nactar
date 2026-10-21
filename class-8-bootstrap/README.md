@@ -1,5 +1,20 @@
 # Class-08
 
+## Topics:
+
+- Bootstrap Introduction,
+- File Download and link,
+- Bootstrap overview,
+- Bootstrap container,
+- Bootstrap grid layout,
+- Columns,
+- Image,
+- Table,
+- Alert,
+- Nav & Tabs,
+- Collapse,
+- Dropdowns.
+
 ## Bootstrap Introduction
 
 Bootstrap is the world's most popular open-source front-end framework for developing responsive, mobile-first websites. Originally created by Mark Otto and Jacob Thornton at Twitter in 2011, it provides pre-built HTML, CSS, and JavaScript components.
