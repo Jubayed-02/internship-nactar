@@ -5,5 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      const second = 15000;
+      const min = second / 60;
+      const hour = Math.trunc(min / 60);
+      const remaining_min = min % 60;
+      document.write("Hours: ", hour, " Min: ", remaining_min);
+    </script>
+  </body>
 </html>
