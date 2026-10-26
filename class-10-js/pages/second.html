@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link
+      rel="shortcut icon"
+      href="../../class-04-html/asset/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <p id="body-p">This is a paragraph text</p>
+    <p id="body-p2">This is another <span>Paragraph</span> text</p>
+    <script>
+      let p_text = document.getElementById("body-p").innerText;
+      let p_html = document.getElementById("body-p2").innerHTML;
+      console.log(p_text);
+      console.log(p_html);
+    </script>
+  </body>
+</html>
