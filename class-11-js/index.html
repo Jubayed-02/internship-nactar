@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add two numbers using js</h2>
+    <label>Enter number 1: </label>
+    <input type="text" id="n1" />
+    <br />
+    <label>Enter number 2: </label>
+    <input type="text" id="n2" />
+    <br />
+    <button onclick="check()">Check</button>
+    <script>
+      function check() {
+        const n1 = parseFloat(document.getElementById("n1").value);
+        const n2 = parseFloat(document.getElementById("n2").value);
+        console.log(n2, n1);
+        const sum = n1 + n2;
+        window.alert("Sum: " + sum);
+      }
+    </script>
+  </body>
+</html>
