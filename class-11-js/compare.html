@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Enter number 1: </label>
+    <input type="text" id="n1" />
+    <br />
+    <label>Enter number 2: </label>
+    <input type="text" id="n2" />
+    <br />
+    <button onclick="submit()">Check</button>
+    <script>
+      function submit() {
+        const n1 = parseFloat(document.getElementById("n1").value);
+        const n2 = parseFloat(document.getElementById("n2").value);
+        let greater;
+        if (n1 === n2) {
+          window.alert("Both are equal");
+        } else if (n1 < n2) {
+          greater = n2;
+        } else {
+          greater = n1;
+        }
+        if (greater) window.alert(`${greater} is greater`);
+      }
+    </script>
+  </body>
+</html>
