@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="shortcut icon"
+      href="../class-04-html/asset/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--  -->
+    <h2>Form validation demo</h2>
+    <label>Email: </label>
+    <input type="text" id="email" />
+    <p id="invalid-mail" class="red"></p>
+    <label>Password: </label>
+    <input type="text" id="pass" />
+    <p id="invalid-pass" class="red"></p>
+    <br />
+    <button onclick="formValidation()">Submit</button>
+    <script>
+      function formValidation() {
+        const mail = document.getElementById("email").value;
+        const pass = document.getElementById("pass").value;
+        const valid_mail_substrings = "@gmail.com";
+        let in_mail = document.getElementById("invalid-mail");
+        let in_pass = document.getElementById("invalid-pass");
+        // let valid;
+        if (pass.length < 3) {
+          //   valid = false;
+          in_pass.innerText = "Password must have more than 3 characters";
+        } else {
+          in_pass.innerText = "";
+        }
+        if (mail.includes(valid_mail_substrings)) {
+          in_mail.innerText = "";
+        } else {
+          in_mail.innerText = "invalid email";
+        }
+      }
+    </script>
+  </body>
+</html>
