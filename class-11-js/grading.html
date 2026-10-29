@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>GPA to letter grade converter</h2>
+    <br />
+    <label>GPA: </label>
+    <input type="text" id="gpa" />
+    <br /><br />
+
+    <button onclick="result()">Check</button>
+    <script>
+      function result() {
+        const gpa = parseFloat(document.getElementById("gpa").value);
+        let letter;
+        switch (true) {
+          case gpa > 5 || gpa < 0:
+            letter = "invalid gpa";
+            break;
+          case gpa >= 4:
+            letter = "A+";
+            break;
+          case gpa >= 3:
+            letter = "B+";
+            break;
+          case gpa >= 2:
+            letter = "C+";
+            break;
+          default:
+            letter = "F+";
+        }
+        window.alert(letter);
+      }
+    </script>
+  </body>
+</html>
