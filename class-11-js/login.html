@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Mail: </label>
+    <input type="text" id="mail" />
+    <br />
+    <label>Password: </label>
+    <input type="password" name="password" id="pass" />
+    <br />
+    <button onclick="login()">Login</button>
+    <script>
+      function login() {
+        const mail = document.getElementById("mail").value;
+        const password = document.getElementById("pass").value;
+        const dbmail = "abc@gmail.com";
+        const dbpass = "abcdef";
+        if (mail === dbmail && password === dbpass) {
+          window.alert("Login Successfully");
+        } else if (!mail || !password) {
+          window.alert("Input correctly");
+        } else {
+          window.alert("Invalid credintials");
+        }
+      }
+    </script>
+  </body>
+</html>
