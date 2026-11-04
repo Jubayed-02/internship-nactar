@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="container">
+      <div class="heading wow animate__animated animate__bounceInUp">
+        <h3>WHY CHOOSE US</h3>
+        <h1>We Are Here To Grow Your Business Exponentially</h1>
+      </div>
+
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col">
+          <div class="in-col wow animate__animated animate__fadeInLeft">
+            <div class="icon">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h2 class="h3">Best In Industry</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              fuga ratione nulla provident.
+            </p>
+          </div>
+
+          <div class="in-col wow animate__animated animate__fadeInLeft">
+            <div class="icon">
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <h2 class="h3">Professional Staff</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              fuga ratione nulla provident.
+            </p>
+          </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="col wow animate__animated animate__zoomIn">
+          <img
+            src="https://picsum.photos/200/400"
+            height="100%"
+            width="100%"
+            alt="Business team"
+          />
+        </div>
+
+        <!-- Right Column -->
+        <div class="col">
+          <div class="in-col wow animate__animated animate__fadeInRight">
+            <div class="icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h2 class="h3">Award Winning</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              fuga ratione nulla provident.
+            </p>
+          </div>
+
+          <div class="in-col wow animate__animated animate__fadeInRight">
+            <div class="icon">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h2 class="h3">24/7 Support</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              fuga ratione nulla provident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+
+    <!-- WOW.js (Load only once) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Initialize WOW.js -->
+    <script>
+      new WOW({
+        boxClass: "wow",
+        animateClass: "animate__animated",
+        offset: 0,
+        mobile: true,
+        live: true,
+      }).init();
+    </script>
+  </body>
+</html>
