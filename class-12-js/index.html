@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .name {
+        border: 2px solid white;
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        padding: 50px;
+        border-radius: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      const container = document.getElementById("container");
+      const array = ["hehe", "hihi", "haha"];
+
+      for (let i = 0; i < array.length; i++) {
+        let div_tag = document.createElement("div");
+        div_tag.className = "name";
+        let p_tag = document.createElement("h2");
+        p_tag.textContent = array[i];
+
+        div_tag.appendChild(p_tag);
+        container.appendChild(div_tag);
+      }
+    </script>
+  </body>
+</html>

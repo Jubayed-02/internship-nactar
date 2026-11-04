@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #table {
+        /* padding: 30px; */
+        border-spacing: 0;
+        border: 2px solid white;
+        /* border-collapse: col lapse; */
+      }
+      #table td {
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table">
+      <tr>
+        <td>Name</td>
+        <td>Roll</td>
+        <td>Status</td>
+      </tr>
+    </table>
+    <script>
+      const table = document.getElementById("table");
+      const array = [
+        { name: "jubayed", roll: 74, status: "active" },
+        { name: "Nazmul", roll: 75, status: "inactive" },
+        { name: "jerin", roll: 76, status: "active" },
+        { name: "jed", roll: 77, status: "active" },
+        { name: "humayun", roll: 79, status: "active" },
+      ];
+
+      for (let i = 0; i < array.length; i++) {
+        let tr = document.createElement("tr");
+        if (array[i].status == "inactive") {
+          continue;
+        }
+        tr.innerHTML = `
+            <td> ${array[i].name} </td>
+            <td> ${array[i].roll} </td>
+            <td> ${array[i].status} </td>
+        `;
+        table.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>
