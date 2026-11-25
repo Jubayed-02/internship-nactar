@@ -1,5 +1,12 @@
-# Class - 11
+# Class-10
 
-## topic:
+## topics:
 
-- Conditional Statements
+- JavaScript,
+- Introduction,
+- Where to use,
+- Statements,
+- Comments,
+- Variables,
+- Operators,
+- Data types

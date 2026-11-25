@@ -1,15 +1,32 @@
-# Class 09
+# Class-08
 
-## topics:
+## Topics:
 
-- Bootstrap Button,
-- Button groups,
-- Navbar,
-- Card,
-- List group,
-- Form,
-- Accordion,
-- Bootstrap carousel,
-- Modal,
-- Utilities Overview,
-- Helper Overview.
+- Bootstrap Introduction,
+- File Download and link,
+- Bootstrap overview,
+- Bootstrap container,
+- Bootstrap grid layout,
+- Columns,
+- Image,
+- Table,
+- Alert,
+- Nav & Tabs,
+- Collapse,
+- Dropdowns.
+
+## Bootstrap Introduction
+
+Bootstrap is the world's most popular open-source front-end framework for developing responsive, mobile-first websites. Originally created by Mark Otto and Jacob Thornton at Twitter in 2011, it provides pre-built HTML, CSS, and JavaScript components.
+
+Key Features:
+
+- Responsive grid system
+
+- Pre-styled components (buttons, navbars, cards, modals)
+
+- JavaScript plugins (dropdowns, carousels, tooltips)
+
+- Customizable via Sass variables
+
+- Cross-browser compatibility

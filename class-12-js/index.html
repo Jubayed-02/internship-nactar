@@ -5,34 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .name {
-        border: 2px solid white;
-        height: 200px;
-        width: 200px;
-        margin: 20px;
-        padding: 50px;
-        border-radius: 25%;
+      input {
+        margin: 12px 0;
       }
     </style>
   </head>
   <body>
-    <div id="container"></div>
+    <h2>Add two numbers using js</h2>
+    <label>Enter number 1: </label>
+    <input type="text" id="n1" />
+    <br />
+    <label>Enter number 2: </label>
+    <input type="text" id="n2" />
+    <br />
+    <button onclick="check()">Check</button>
     <script>
-      const container = document.getElementById("container");
-      const array = ["hehe", "hihi", "haha"];
-
-      for (let i = 0; i < array.length; i++) {
-        let div_tag = document.createElement("div");
-        div_tag.className = "name";
-        let p_tag = document.createElement("h2");
-        p_tag.textContent = array[i];
-
-        div_tag.appendChild(p_tag);
-        container.appendChild(div_tag);
+      function check() {
+        const n1 = parseFloat(document.getElementById("n1").value);
+        const n2 = parseFloat(document.getElementById("n2").value);
+        console.log(n2, n1);
+        const sum = n1 + n2;
+        window.alert("Sum: " + sum);
       }
     </script>
   </body>
