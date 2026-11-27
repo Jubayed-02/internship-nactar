@@ -1,9 +1,8 @@
-# Class-15
+# Class-16
 
 ## Topics:
 
-- Introduction of PHP,
-- PHP Syntax, Show Output,
-- Variables,
-- constants,
-- Data types
+- PHP Operator,
+- Conditional statements,
+- Loop,
+- Function
