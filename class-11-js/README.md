@@ -2,8 +2,7 @@
 
 ## topics:
 
-- JavaScript,
-- Introduction,
+- JavaScript Introduction,
 - Where to use,
 - Statements,
 - Comments,
