@@ -27,6 +27,6 @@ Key Features:
 
 - JavaScript plugins (dropdowns, carousels, tooltips)
 
-- Customizable via Sass variables
+- Customizable via Sass variables,
 
-- Cross-browser compatibility
+- Cross-browser compatibility.
